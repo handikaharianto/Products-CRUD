@@ -1,0 +1,16 @@
+{
+  "employees": [
+    {
+      "productName": "tomato",
+      "productDescription": "best tomato",
+      "productPrice": "1.22",
+      "id": 4
+    },
+    {
+      "productName": "mango",
+      "productDescription": "sweetest mango",
+      "productPrice": "2.99",
+      "id": 6
+    }
+  ]
+}

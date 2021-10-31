@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.products {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1em;
+  width: 90%;
+  max-width: 1320px;
+  margin: 3em auto;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.data-info {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 3rem;
+}
+
+.form-control {
+  max-width: 500px;
+}
+
+.cancel-btn {
+  margin-left: 1em;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.card-body > p {
+  font-size: 0.8rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-buttons {
+  position: absolute;
+  top: -2rem;
+  left: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-buttons button {
+  padding: 0 0.3em;
+  border: transparent;
+  border-radius: 5px;
+  margin: 0 0.5em;
+  background-color: lightgray;
+  font-size: 1.2rem;
+  transition: all 0.2s linear;
+}
+
+.edit-btn:hover {
+  color: green;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+.card.active .product-buttons {
+  transform: translateY(3rem);
 }
