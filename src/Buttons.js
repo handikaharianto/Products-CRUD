@@ -14,7 +14,7 @@ const Buttons = ({ id }) => {
 
   async function deleteProduct(e) {
     const productId = parseInt(e.currentTarget.dataset.id);
-    const url = `http://localhost:3000/employees/${productId}`;
+    const url = `https://han-products-api.herokuapp.com/products/${productId}`;
     const data = await deleteData(url);
 
     setData((prevData) => {

@@ -6,9 +6,8 @@ import Header from "./Header";
 import Products from "./Products";
 import useFetch from "./useFetch";
 
-const url = "http://localhost:3000/employees";
-
-// USE THIS AS A REFERENCE FOR OPTIMIZATION AND BEST PRACTICES https://github.com/PaulBratslavsky/reactcrud/tree/master/src
+// GitHub url to this API: https://github.com/handikaharianto/products-api
+const url = "https://han-products-api.herokuapp.com/products";
 
 const INITIAL_FORM_VALUES = {
   productName: "",
